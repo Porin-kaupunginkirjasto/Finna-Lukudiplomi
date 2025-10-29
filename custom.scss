@@ -1,0 +1,87 @@
+/*CSS for lukudiplomi sivu */
+.grid-body .holding-details {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.accordion {
+  margin: 15px 0;
+}
+
+.result-view-grid .grid:not(.recordcovers) .grid-image {
+  background-color: rgb(0, 0, 0, 0);
+}
+
+.accordion-item {
+  background: $primary;
+  color: $titles;
+}
+
+.accordion-body a {
+  color: lighten($primary, 45%);
+}
+
+.accordion-item:first-child > .accordion-header {
+  border-top-left-radius: var(--bs-border-radius);
+  border-top-right-radius: var(--bs-border-radius);
+}
+
+.accordion-item:last-child > .accordion-header {
+  border-bottom-left-radius: var(--bs-border-radius);
+  border-bottom-right-radius: var(--bs-border-radius);
+}
+
+.accordion-header,
+.accordion-button {
+  background: $primary;
+  color: $titles;
+  font-size: 24px;
+}
+
+.accordion-header {
+  padding-top: 0 !important;
+}
+
+.accordion-caret {
+  margin-right: 0;
+  margin-left: auto;
+  transition: transform 0.2s ease-in-out;
+}
+
+.accordion-button:not(.collapsed) .accordion-caret {
+  transform: rotate(180deg);
+}
+
+.accordion-button::after {
+  display: none;
+}
+
+.accordion .callnumAndLocation .actions .title-hold {
+  border: white solid 1px;
+  border-radius: 4px;
+}
+
+.accordion .callnumAndLocation .header .info {
+  color: $titles;
+}
+
+.accordion .callnumAndLocation .holdings .branchInfo {
+  color: $titles;
+}
+
+.accordion .callnumAndLocation .holdings .odd {
+  background: darken($primary, 5%);
+}
+
+/* make the taso look like a plate */
+.lukudiplomi-taso p {
+  padding: 15px;
+  background: darken($primary, 5%);
+  border-radius: 25px;
+  max-width: fit-content;
+  margin: 0 auto;
+}
+
+.accordion .holdings.root {
+  text-align: left;
+}
