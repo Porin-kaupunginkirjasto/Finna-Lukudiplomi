@@ -1,0 +1,222 @@
+<!-- START of: Content/lukudiplomi_fi.phtml -->
+
+<? $this->headTitle('Porin lukudiplomi'); $this->content()->setHeading('Porin lukudiplomi'); ?>
+
+<div class="row">
+    <div class="col-md-9 col-xs-12">
+       
+        <p>Lukudiplomi on suunnattu alakoululaisille ja se koostuu 10 aihealueesta. 
+        Lukudiplomin tasot ovat: 1. Lukutoukka, 2. Kirja-ahmatti ja 3. L.T.P.M.P.K. 
+        (luen tosi paljon myös paksuja kirjoja). Lukudiplomin suorittajat voivat valita kirjoja 
+        mistä aihealueesta ja lukutasolta haluavat. Tasot eivät ole ikäsuosituksia.</p>
+
+      <p>
+          Kysy opettajalta, kuinka  monta kirjaa tarvitaan lukudiplomin suorittamiseen. 
+          (Lukuvuoden aikana voi lukea esimerkiksi kuusi kirjaa  eri aihelistoilta.)
+      </p>
+      <p><strong><a href="#opettaja">Opettajan ohjeet lukudiplomin käyttämiseen</a></strong></p>
+        
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-9 col-xs-12">
+        <h2 class="lanu-otsikot">Lukudiplomin kirjalistat</h2>
+        
+        <div>
+            <label for="lukudiplomi-tasot">Valitse lukutaso:</label>
+        <select class=" form-select" id="lukudiplomi-tasot" >
+            <option selected="selected">Kaikki tasot</option>
+            <option>Lukutoukka</option>
+        <option>Kirja-ahmatti</option>
+            <option>LTPMPK</option>
+        </select>
+        </div>
+        
+<? //$this->userlistEmbed(['id' => 395957, 'view' => 'grid',  'date' => false, 'title' => false],     null,     null) ?>
+
+
+    <div class="accordion" id="lukudiplomiAccordion" >
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne" style="padding-top: 0;">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+        Aika ja avaruus <i class="fas fa-chevron-down accordion-caret"></i>
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#lukudiplomiAccordion">
+      <div class="accordion-body">
+       <?= $this->userlistEmbed(['id' => 395957, 'view' => 'grid-extended', 'date' => false, 'title' => false])?>
+     </div>
+     <button class="btn btn-primary close-and-scroll" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+        Sulje lista
+      </button>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Epäilyttäviä asioita <i class="fas fa-chevron-down accordion-caret"></i>
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#lukudiplomiAccordion">
+      <div class="accordion-body">
+        <?= $this->userlistEmbed(['id' => 395958, 'view' => 'grid-extended', 'date' => false, 'title' => false])?>
+      </div>
+       <button class="btn btn-primary close-and-scroll" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Sulje lista
+      </button>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Kaverikiumuroita <i class="fas fa-chevron-down accordion-caret"></i>
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#lukudiplomiAccordion">
+      <div class="accordion-body">
+          <?= $this->userlistEmbed(['id' => 395960, 'view' => 'grid-extended', 'date' => false, 'title' => false])?>
+      </div>
+       <button class="btn btn-primary close-and-scroll" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Sulje lista
+      </button>
+    </div>
+  </div>
+  
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingFour">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+        Ikisuosikkeja <i class="fas fa-chevron-down accordion-caret"></i>
+      </button>
+    </h2>
+    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#lukudiplomiAccordion">
+      <div class="accordion-body">
+          <?= $this->userlistEmbed(['id' => 395959, 'view' => 'grid-extended', 'date' => false, 'title' => false])?>
+      </div>
+       <button class="btn btn-primary close-and-scroll" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+        Sulje lista
+      </button>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingFive">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+        Kirja vai elokuva <i class="fas fa-chevron-down accordion-caret"></i>
+      </button>
+    </h2>
+    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#lukudiplomiAccordion">
+      <div class="accordion-body">
+          <?= $this->userlistEmbed(['id' => 395961, 'view' => 'grid-extended', 'date' => false, 'title' => false])?>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingSix">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+        Koulussa, koulusta, kouluun <i class="fas fa-chevron-down accordion-caret"></i>
+      </button>
+    </h2>
+    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#lukudiplomiAccordion">
+      <div class="accordion-body">
+          <?= $this->userlistEmbed(['id' => 395962, 'view' => 'grid-extended', 'date' => false, 'title' => false])?>
+      </div>
+      <button class="btn btn-primary close-and-scroll" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseOSix">
+        Sulje lista
+      </button>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingSeven">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+        Lohikäärmeitä ja hirviöitä <i class="fas fa-chevron-down accordion-caret"></i>
+      </button>
+    </h2>
+    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#lukudiplomiAccordion">
+      <div class="accordion-body">
+          <?= $this->userlistEmbed(['id' => 395963, 'view' => 'grid-extended', 'date' => false, 'title' => false])?>
+      </div>
+       <button class="btn btn-primary close-and-scroll" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+        Sulje lista
+      </button>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingEight">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+        Nappiksia ja lätkäkiekkoja <i class="fas fa-chevron-down accordion-caret"></i>
+      </button>
+    </h2>
+    <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#lukudiplomiAccordion">
+      <div class="accordion-body">
+          <?= $this->userlistEmbed(['id' => 395964, 'view' => 'grid-extended', 'date' => false, 'title' => false])?>
+      </div>
+       <button class="btn btn-primary close-and-scroll" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+        Sulje lista
+      </button>
+    </div>
+  </div>
+  
+  </div>
+</div>
+</div>
+
+<div class="row">
+
+  <div class="col-md-12 cols-xs-12">
+
+        
+         
+    <div >
+        <?=$this->feed('lapset_vinkkaa'); ?>
+        <div class="infobox kirjavinkki">
+        <p><a href="<?=$this->url('feedback-form', ['id' => 'SendReview'])?>" >
+        <b> Tämän lomakkeen kautta</a> voit lähettää kirjoittamiasi kirjavinkkejä</b></p>
+        <!--<p>Katso kaikki palautetut vinkit <a href="https://satakirjastot.finna.fi/List/640856">tästä linkistä</a></p>-->
+        </div>
+    </div>
+  </div>    
+</div>
+
+
+
+<div class="row">
+    <div class="col-md-9 col-xs-12">
+        <h2>Haluan suorittaa diplomin - miten aloitan?</h2>
+        <ul class="list-bullets">
+            <li>Kerro omalle opettajallesi, että haluat suorittaa lukudiplomin</li>
+            <li>Opettaja kertoo, kuinka monta kirjaa sinun pitää lukea diplomia varten</li>
+            <li>Lukutoukka-kirjat ovat tasoltaan helpoimpia (1.-2.lk), Kirja-ahmateissa on jo enemmän tekstiä (3.-4.lk), 
+            L.T.P.M.P.K. -kirjat sopivat paljon lukeville (5.-6.lk)</li>
+            <li>Valitse eri aihealueista kirjoja, jotka haluat lukea. Huomaa, että voit lukea eri tasoisia kirjoja, esim. 
+            Lukutoukka-kirjan ikisuosikeista tai Kirja-ahmatti-kirjan eläintarinoista.</li>
+            <li>Luettuasi kirjan valitse kyseisen listan tehtävistä yksi ja tee se</li>
+            <li>Kun olet lukenut  kirjat ja tehnyt niihin liittyvät tehtävät, olet suorittanut lukudiplomin</li>
+            <li>Onneksi olkoon! Pyydä opettajaa <a href="<?= $this->fileSrc('Lukudiplomitodistus_2024.pdf')?>" target="_blank">tulostamaan lukudiplomitodistus</a></li>
+        </ul>
+        
+        <a name="opettaja"></a>
+        <h2>Vinkkejä opettajalle</h2>
+        <ul class="list-bullets">
+            <li>lukudiplomiin suorittamiseen sopii esimerkiksi 6-10 kirjaa lukuvuoden aikana</li>
+            <li>lukudiplomi koostuu kolmesta tasosta ja kirjan voi valita miltä tahansa tasolta 
+            (huomaa, että tasot eivät ole ikäsuosituksia)</li>
+            <li>koko luokalle ei kannata suositella samaa kirjaa (kirjojen määrä kirjastossakin on rajallinen)</li>
+            <li>opettaja voi itse päättää, kuinka diplomi suoritetaan ja suoritus kontrolloidaan</li>
+            <li>kirjojen saatavuuden voi tarkastaa verkkokirjaston kautta </li>
+            <li>kirjaston henkilökunta auttaa tarvittaessa löytämään sopivan kirjan</li>
+            <li>oppilaat voivat tehdä lukudiplomin erilliseen lukudiplomivihkoon, johon kootaan luetut kirjat ja tehdyt tehtävät</li>
+            <li>luokkaan voidaan rakentaa lukumato tai lukuveturi, johon kerätään kaikkien lukemat kirjat</li>
+            <li>oppilaat voivat vinkata lukemiaan kirjoja toisille tai vaikka rinnakkaisluokan oppilaille</li>
+        
+        </ul>
+        
+        <h2>Jos lukeminen on hankalaa</h2>
+        <p>Mikäli tavallisten kirjojen lukeminen on hankalaa erimerkiksi vamman, lukihäiriön tai kielitaidon 
+        puutteen takia, kirjastosta löytyy myös selkokielisiä kirjoja, äänikirjoja, elokuvia, e-kirjoja ja e-äänikirjoja. 
+        Oppilaat voivat liittyä myös <a href="https://www.celia.fi/" target="blank">Celian</a>
+         käyttäjiksi. Celian palvelut ovat tarkoitettu lukuesteisille.</p>
+
+
+    </div></div>
+
+<!-- END of: Content/lukudiplomi_fi.phtml -->

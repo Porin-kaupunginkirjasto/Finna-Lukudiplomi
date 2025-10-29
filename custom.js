@@ -2,6 +2,39 @@ function finnaCustomInit() {
   initAccordionScrollBehavior("lukudiplomiAccordion");
 }
 
+//Function to select lukudiplomi-tasot
+function filterTaso(filter) {
+  const elements = document.querySelectorAll(".result.grid");
+  //console.log("elements", elements)
+  const elementArray = Array.from(elements);
+  //console.log("array: ", elementArray)
+  if (filter === "Kaikki tasot") {
+    elementArray.forEach((el) => el.classList.remove("sata-hide"));
+    return;
+  }
+  const allFiltered = elementArray.filter((el) =>
+    el.innerText.includes(filter)
+  );
+  const allNotFiltered = elementArray.filter(
+    (el) => !el.innerText.includes(filter)
+  );
+  //console.log("filtered: ", allFiltered);
+  allFiltered.forEach((el) => el.classList.remove("sata-hide"));
+  allNotFiltered.forEach((el) => el.classList.add("sata-hide"));
+}
+
+window.addEventListener("load", () => {
+  const lukudiplomiTasoSelection = document.querySelector("#lukudiplomi-tasot");
+  console.log(lukudiplomiTasoSelection);
+  if (lukudiplomiTasoSelection) {
+    lukudiplomiTasoSelection.addEventListener("click", () => {
+      const filter = lukudiplomiTasoSelection.selectedOptions[0].innerText;
+      console.log(filter);
+      filterTaso(filter);
+    });
+  }
+});
+
 function initAccordionScrollBehavior(accordionId) {
   let shouldScrollToHeader = false;
   let targetHeaderId = null;
