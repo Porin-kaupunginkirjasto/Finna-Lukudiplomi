@@ -38,6 +38,11 @@
   font-size: 24px;
 }
 
+.accordion-header:hover,
+.accordion-button:hover {
+  background: darken($primary, 5%);
+}
+
 .accordion-header {
   padding-top: 0 !important;
 }
@@ -46,6 +51,15 @@
   margin-right: 0;
   margin-left: auto;
   transition: transform 0.2s ease-in-out;
+}
+
+.accordion-button:not(.collapsed) {
+  background: $secondary;
+  color: $titles;
+}
+
+.accordion-button:not(.collapsed):hover {
+  background: darken($secondary, 11%);
 }
 
 .accordion-button:not(.collapsed) .accordion-caret {
@@ -76,10 +90,11 @@
 /* make the taso look like a plate */
 .lukudiplomi-taso p {
   padding: 15px;
-  background: darken($primary, 5%);
+  background: $secondary;
   border-radius: 25px;
   max-width: fit-content;
-  margin: 0 auto;
+  margin: 15px auto;
+  font-weight: 600;
 }
 
 .accordion .holdings.root {
