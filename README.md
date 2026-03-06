@@ -32,15 +32,17 @@ käyttöön tallentamalla `custom/templates/search` -kansioon tiedosto `list-gri
 `Porin_lukudiplomi_fi.phtml` sisältää Porin version lukudiplomista, joka
 on sisällytetty Bootstrap-akkordioniin. Näin nähdään heti aiheiden otsikot
 yhdellä silmäyksellä, ja voidaan avata vain tarvittava aihelista
-näkyviin. Kun toinen lista avataan, aiemmin avoinne ollut suljetaan
+näkyviin. Kun toinen lista avataan, aiemmin avoinna ollut lista suljetaan
 automaattisesti.
 
-Koska listat ovat pitkiä, ja kun niitä suljetaan, koko HTML-sivun pituus
-on yhtäkkiä paljon lyhyempi kuin oli aikaisemmin, tarvitaan vielä
-erikseen JS-koodia, joka hoitaa sen, että listan otsikot jäävät aina
-näkyviin. Tarvittava koodi löytyy `custom.js` -tiedostosta.
+Kirjalistat ovat hyvin pitkiä, ja kun niitä suljetaan, koko HTML-sivun pituus
+on yhtäkkiä paljon lyhyempi kuin oli aikaisemmin. Tämän takia tarvitaan vielä
+erikseen JS-koodia, joka hoitaa sen, että listan otsikot jäävät näkyviin, kun
+lista suljetaan. Tarvittava koodi löytyy `custom.js` -tiedostosta. Se koostuu
+funktion määrittelystä ja funktion kutsusta, joka suoritetaan finnaCustomInit()-Funktion
+sisällä.
 
-Lisäksi lukija voi rajat kirjojen näkyvyyttä niin, että hän näkee vain
+Lukija voi rajata kirjojen näkyvyyttä niin, että hän näkee vain
 oman lukutason kirjoja. Sitä varten löytyy suodatin pudotusvalikkona,
 jonka toiminnallisuus löytyy myös JS-koodina `custom.js` -tiedostosta.
 
