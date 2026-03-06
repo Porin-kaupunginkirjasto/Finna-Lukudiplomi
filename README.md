@@ -1,12 +1,15 @@
 # Porin lukudiplomi
 
-Porin lukudiplomi koostuu aihelistoista. Kukin aihelista sisältää aiheeseen liittyviä kirjoja sekä aihekohtaisia tehtäviä. Listan sisällä kirjat on jaettu
+Porin lukudiplomi koostuu aihelistoista. Kukin aihelista sisältää aiheeseen liittyviä 
+kirjoja sekä aihekohtaisia tehtäviä. Listan sisällä kirjat on jaettu
 lukutason mukaan kolmeen tasoon. Oppilas voi valita itselleen sopivan tason,
 taso ei ole kytketty oppilaan luokka-asteeseen tai ikään.
 
 # Lukudiplomi Finnassa
 
-Lukudiplomin kirjat tallennetaan aiheittain Finna-listoihin. Aiheen tehtävät voi kirjoittaa listan kuvaukseen. Jokaiseen listan kirjaan lisätään muistiinpano, joka sisältää kirjan lukutason. Muistiinpanoon voidaan halutessaan kirjoittaa vielä lisätietoja, esim. kuuluuko kirja tiettyyn sarjaan.
+Lukudiplomin kirjat tallennetaan aiheittain Finna-listoihin. Aiheen tehtävät voi kirjoittaa 
+listan kuvaukseen. Jokaiseen listan kirjaan lisätään muistiinpano, joka sisältää kirjan lukutason. 
+Muistiinpanoon voidaan halutessaan kirjoittaa vielä lisätietoja, esim. kuuluuko kirja tiettyyn sarjaan.
 
 Listat lisätään Finnaan content-sivulle seuraavasti:
 
@@ -24,8 +27,8 @@ saatavuustiedot löytyvät varausnappeineen.
 
 Tiedosto `custom/templates/RecordDriver/DefaultRecord/result-grid-extended.phtml`
 luo lukudiplomille sopivat grid-listat Finnassa. Se on muokattu versio
-finna2-kansion alla olevasta `result-grid.phtml` -tiedostosta. Se saadaan
-käyttöön tallentamalla `custom/templates/search` -kansioon tiedosto `list-grid-extended.phtlm` tästä GIT-varannosta.
+finna2-kansion alla olevasta `result-grid.phtml` -tiedostosta. Muokattu grid-lista saadaan
+käyttöön tallentamalla tiedosto `list-grid-extended.phtml` tästä GIT-varannosta  `custom/templates/search` -kansioon.
 
 ## Lukudiplomi-tiedosto, lukutason suodatus ja tyylimuokkauksia
 
