@@ -97,6 +97,11 @@
   font-weight: 600;
 }
 
+/* links with orange background should have more contrast */
+.lukudiplomi-taso p a {
+    color: rgb(110, 106, 194);
+}
+
 .accordion .holdings.root {
   text-align: left;
 }
