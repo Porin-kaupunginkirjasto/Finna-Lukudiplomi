@@ -5,6 +5,8 @@ kirjoja sekä aihekohtaisia tehtäviä. Listan sisällä kirjat on jaettu
 lukutason mukaan kolmeen tasoon. Oppilas voi valita itselleen sopivan tason,
 taso ei ole kytketty oppilaan luokka-asteeseen tai ikään.
 
+Porin lukudiplomia voi katsoa Satakirjastojen Finna-näkymästä.
+
 # Lukudiplomi Finnassa
 
 Lukudiplomin kirjat tallennetaan aiheittain Finna-listoihin. Aiheen tehtävät voi kirjoittaa 
@@ -20,6 +22,12 @@ missä `'id'` on listan numero, joka löytyy listan URL-kentästä.
 Erotuksena tavalliseen grid-listaan tässä muokatussa listassa näytetään
 tietueen muistiinpano suoraan, ei avattavana tekstikenttänä, ja myös
 saatavuustiedot löytyvät varausnappeineen.
+
+HUOM: Listan pitää tallentaa tuotantoympäristössä, mutta tuolloin listaa ei voida lukea pre-puolella. Tämän
+takia listat alkavat näkyä vasta julkaisemisen jälkeen. Jos haluaa testata, voi luoda myös pre-puolelle
+suosikkilistoja ja käyttää niitä pre-puolen testauksessa.
+
+Suosikki-listojen pitää olla julksia, jotta ne näkyvät kaikille.
 
 # Miten se toimii?
 
