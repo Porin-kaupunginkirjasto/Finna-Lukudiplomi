@@ -9,9 +9,11 @@ Porin lukudiplomia voi katsoa Satakirjastojen Finna-näkymästä.
 
 # Lukudiplomi Finnassa
 
-Lukudiplomin kirjat tallennetaan aiheittain Finna-listoihin. Aiheen tehtävät voi kirjoittaa 
+Lukudiplomin kirjat tallennetaan aiheittain Finna-suosikkilistoihin. Aiheen tehtävät voi kirjoittaa 
 listan kuvaukseen. Jokaiseen listan kirjaan lisätään muistiinpano, joka sisältää kirjan lukutason. 
 Muistiinpanoon voidaan halutessaan kirjoittaa vielä lisätietoja, esim. kuuluuko kirja tiettyyn sarjaan.
+On myös mahdollista lisätä HTML-formatointia, esimerkiksi hakulauseke koko sarjaan, josta vain yksi
+nostetaan suosikkilistalle.
 
 Listat lisätään Finnaan content-sivulle seuraavasti:
 
